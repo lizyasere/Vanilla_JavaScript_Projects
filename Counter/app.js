@@ -1,17 +1,17 @@
-// set initia count
+// set initial count
 let count = 0;
 
 // select value and buttons
 const value = document.querySelector('#value');
 const btns = document.querySelectorAll(".btn");
 
-// console.log(btns);
+//  console.log(btns);
 
-btns.forEach(function (btn) {
+btns.forEach(function (btn) { 
     btn.addEventListener('click', function(e){
-     
+         // console.log(e)
         const styles = e.currentTarget.classList;
-
+            console.log(styles)
         if (styles.contains("decrease")) {
             count--;
         }
